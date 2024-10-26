@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Snowfall from "./components/snowfall";
+import Snow from "./components/snow";
 
 // Gavekort-komponent: representerer hvert gaveønske
 function Gave({ title, description, color, imageUrl, link }) {
@@ -48,10 +48,10 @@ export default function Home() {
 
   return (
     <div className="relative">
-    <Snowfall />
+    <Snow />
     <div className="min-h-screen flex flex-col items-center p-8 pb-20 gap-8 bg-background">
-      <h1 className="text-3xl font-bold">Jasmines jul</h1>
-      <h3 className="text-xl font-bold">Her har jeg samlet gaveønsker 🎁 for julen 2024 🥰</h3>
+      <h1 className="text-5xl text-slate-700">Jasmines jul</h1>
+      <h3 className="text-xl text-slate-700 font-light">Her har jeg samlet gaveønsker for julen 2024 🎄</h3>
       <main className="flex flex-col gap-6 w-full max-w-2xl">
         {gaver.map((gave, index) => (
           <Gave
