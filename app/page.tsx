@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Snow from "./components/snow";
+import Footer from "./components/footer";
 import { client } from "@/sanity/lib/client";
 
 type Gift = {
@@ -60,6 +61,7 @@ export default function Home() {
           </div>
         </main>
       </div>
+      <Footer />
     </div>
   );
 }
