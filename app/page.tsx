@@ -44,7 +44,7 @@ export default function Home() {
         <main className="flex flex-col gap-6 w-full max-w-6xl relative z-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
             {gifts.map((gift) => (
-              <div key={gift._id} className="bg-white p-4 rounded shadow">
+              <div key={gift._id} className="bg-rose-800 p-4 rounded shadow">
                 <a href={gift.link} target="_blank" rel="noopener noreferrer">
                   <img
                     src={gift.imageUrl}
@@ -52,10 +52,10 @@ export default function Home() {
                     className="w-full h-48 object-cover rounded"
                   />
                 </a>
-                <h2 className="text-lg font-semibold mt-2">{gift.name}</h2>
-                <p className="text-sm font-light text-slate-500"> 🎁 {gift.type}</p>
-                <p className="text-sm font-light text-slate-700"> ❤️ {gift.color}</p>
-                <p className="text-xs font-light text-rose-700 mt-1">{gift.comments}</p>
+                <h2 className="text-lg text-slate-100 font-semibold mt-2">{gift.name}</h2>
+                <p className="text-sm font-light text-slate-200"> ❄️ {gift.type}</p>
+                <p className="text-sm font-light text-slate-200"> 🤍 {gift.color}</p>
+                <p className="text-xs font-light text-rose-300 mt-1">{gift.comments}</p>
               </div>
             ))}
           </div>
