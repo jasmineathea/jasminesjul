@@ -41,7 +41,7 @@ export default function Home() {
         <h3 className="text-xl text-slate-700 font-light text-center">
           Her har jeg samlet gaveønsker for julen 2024 🎄
         </h3>
-        <main className="flex flex-col gap-6 w-full max-w-6xl">
+        <main className="flex flex-col gap-6 w-full max-w-6xl relative z-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
             {gifts.map((gift) => (
               <div key={gift._id} className="bg-white p-4 rounded shadow">

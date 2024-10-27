@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="flex flex-col items-center p-4 bg-slate-300 text-rose-900">
+    <footer className="flex flex-col items-center p-4 bg-slate-300 text-rose-900 relative z-20">
       <p className="text-small font-thin">
         kildekoden ligger på{" "}
         <Link href="https://github.com/jasmineathea" target="_blank">
