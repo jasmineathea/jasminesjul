@@ -52,7 +52,7 @@ export default function Home() {
                     className="w-full h-48 object-cover rounded"
                   />
                 </a>
-                <h2 className="text-lg text-slate-100 font-semibold mt-2">{gift.name}</h2>
+                <h2 className="text-lg text-slate-100 mt-2">{gift.name}</h2>
                 <p className="text-sm font-light text-slate-200"> ❄️ {gift.type}</p>
                 <p className="text-sm font-light text-slate-200"> 🤍 {gift.color}</p>
                 <p className="text-xs font-light text-rose-300 mt-1">{gift.comments}</p>
