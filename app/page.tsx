@@ -3,13 +3,12 @@ import { useEffect, useState } from "react";
 import Snow from "./components/snow";
 import { client } from "@/sanity/lib/client";
 
-// Typen for et gift-dokument
 type Gift = {
   _id: string;
   name: string;
   type: string;
   color: string;
-  imageUrl: string; // Oppdater til imageUrl
+  imageUrl: string;
   link: string;
   comments: string;
 };
